@@ -1,21 +1,21 @@
-# Hi there, I'm rnwjdgus03 👋
+# Hi there, I'm Jeonghyeon Gu 👋
 
-AI와 NLP를 공부하며, LLM이 생성한 답변보다 **근거를 추적할 수 있는 AI 시스템**에 관심이 있습니다.
+AI·NLP를 공부하고 프로젝트로 구현하며, **근거를 추적할 수 있는 AI 서비스**를 만들고 있습니다.
 
-저는 뉴스 문장, 검색 후보, 공식 데이터, 평가 지표가 서로 어떻게 연결되는지 확인할 수 있는 **evidence-grounded AI pipeline**을 만드는 것을 중요하게 생각합니다.
+자연어 처리, 검색, 데이터베이스와 공식 API를 연결해 모델의 판단 과정을 관찰하고 평가할 수 있는 시스템에 관심이 있습니다. 좋은 결과뿐 아니라 실패 원인과 불확실성까지 설명할 수 있는 개발을 지향합니다.
 
 ---
 
 ## Now
 
-- AI / NLP 학습 내용을 [TIL](https://github.com/rnwjdgus03/TIL)에 정리하고 있습니다.
-- 공식 통계 기반 뉴스 수치 검증 PoC를 팀 프로젝트로 개발했습니다.
-- HCX-007, BGE-M3, reranker, PostgreSQL, KOSIS Open API를 활용한 검증 파이프라인을 실험했습니다.
-- 검색 모델이 만든 후보를 그대로 믿지 않고, 정형 메타데이터와 공식 API로 검증하는 구조에 관심이 있습니다.
+- [AI·NLP Learning Notes](https://github.com/rnwjdgus03/TIL)에 딥러닝 기초부터 Transformer, RAG, CLIP까지 학습 내용을 정리하고 있습니다.
+- 공식 통계와 뉴스 수치 주장을 연결하는 evidence-grounded AI pipeline을 개발했습니다.
+- 검색 모델의 후보를 정형 메타데이터와 공식 API로 검증하는 구조를 탐구하고 있습니다.
+- Retrieval 성능뿐 아니라 좌표 정합성, blind evaluation, 안전한 실패 정책까지 함께 평가하고 있습니다.
 
 ---
 
-## Featured Project
+## Featured AI Project
 
 ### KOSIS 뉴스 수치 검증 PoC
 
@@ -221,11 +221,28 @@ URL50 실험에서도 HCX가 263개의 측정값을 구조화했지만, KOSIS-re
 
 ---
 
+## Learning & Research Interests
+
+- Text preprocessing, tokenization, PyTorch model training
+- RNN, Seq2Seq, Attention, Transformer, BERT, GPT
+- Retrieval-augmented generation and evidence-grounded AI
+- Lexical, dense, hybrid retrieval and reranking
+- LLM evaluation, hallucination control and human-reviewable workflows
+- CLIP, contrastive learning and multimodal representation
+
+학습 노트는 [TIL Repository](https://github.com/rnwjdgus03/TIL)에서 주제별로 정리하고 있습니다.
+
+---
+
 ## Tech Stack
 
 ### AI / NLP
 
-HCX-007 · Structured Outputs · BGE-M3 · BGE Reranker · BM25 · Dense Retrieval · RAG · Reranking
+PyTorch · Hugging Face · Transformer · BERT · GPT · CLIP · HCX-007 · Structured Outputs
+
+### Retrieval / LLM Application
+
+BGE-M3 · BGE Reranker · BM25 · Dense Retrieval · Hybrid Retrieval · RAG · Reranking
 
 ### Backend / Data
 
@@ -239,5 +256,5 @@ Top-k Recall · Coordinate Accuracy · READY / ENRICH / REJECT Gate · MATCH / U
 
 ## Repositories
 
-- [TIL](https://github.com/rnwjdgus03/TIL) — AI 공부 기록
+- [TIL](https://github.com/rnwjdgus03/TIL) — AI·NLP 개념을 학습 흐름에 따라 정리한 노트
 - [NLP_05-Team-Project-3](https://github.com/rnwjdgus03/NLP_05-Team-Project-3) — KOSIS 뉴스 수치 검증 PoC
