@@ -27,7 +27,7 @@ AI·NLP를 공부하고 프로젝트로 구현하며, **근거를 추적할 수 
 | Project | Area | Status | Links |
 |---|---|---|---|
 | KOSIS 뉴스 수치 검증 PoC | NLP · Retrieval · Backend · Evaluation | Completed | [Overview](./projects/kosis-news-verification.md) · [Repository](https://github.com/rnwjdgus03/NLP_05-Team-Project-3) · [PPTX](./assets/kosis-news-verification-final.pptx) |
-| FIRE CARE | Mobile · AI Vision · Backend · PostgreSQL | In Progress | [Overview](./projects/fire-care.md) |
+| FIRE CARE | Mobile · AI Vision · Backend · PostgreSQL | In Progress | [Overview](./projects/fire-care.md) · [PDF](./assets/fire-care-presentation.pdf) |
 
 ### 01. KOSIS 뉴스 수치 검증 PoC
 
