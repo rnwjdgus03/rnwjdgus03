@@ -22,6 +22,8 @@ AI와 NLP를 공부하며, LLM이 생성한 답변보다 **근거를 추적할 �
 Official Statistics-grounded News Claim Verification PoC  
 Team Project | NLP · Retrieval · Backend · Evaluation
 
+[발표자료 PPTX](./assets/kosis-news-verification-final.pptx) · [Project Repository](https://github.com/rnwjdgus03/NLP_05-Team-Project-3)
+
 뉴스 기사 URL에서 수치 주장을 추출하고, 해당 주장이 KOSIS 공식 통계로 검증 가능한지 판단하는 PoC를 개발했습니다.
 
 이 프로젝트의 핵심은 뉴스 속 숫자를 바로 맞히는 것이 아니라, 그 숫자가 어떤 공식 통계표, 항목, 분류, 기간, 단위에 해당하는지 **정확한 통계 좌표**를 찾는 것이었습니다.
