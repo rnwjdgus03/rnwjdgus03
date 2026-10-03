@@ -4,6 +4,10 @@ AI·NLP를 공부하고 프로젝트로 구현하며, **근거를 추적할 수 
 
 자연어 처리, 검색, 데이터베이스와 공식 API를 연결해 모델의 판단 과정을 관찰하고 평가할 수 있는 시스템에 관심이 있습니다. 좋은 결과뿐 아니라 실패 원인과 불확실성까지 설명할 수 있는 개발을 지향합니다.
 
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/rnwjdgus03)
+[![Email](https://img.shields.io/badge/Email-03C75A?style=flat-square&logo=naver&logoColor=white)](mailto:rnwjdgus03@naver.com)
+![Profile Views](https://komarev.com/ghpvc/?username=rnwjdgus03&color=blueviolet&style=flat-square)
+
 ---
 
 ## Now
@@ -238,19 +242,41 @@ URL50 실험에서도 HCX가 263개의 측정값을 구조화했지만, KOSIS-re
 
 ### AI / NLP
 
-PyTorch · Hugging Face · Transformer · BERT · GPT · CLIP · HCX-007 · Structured Outputs
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
+![Hugging Face](https://img.shields.io/badge/Hugging_Face-FFD21E?style=flat-square&logo=huggingface&logoColor=black)
+![Transformers](https://img.shields.io/badge/Transformers-FFCC4D?style=flat-square&logo=huggingface&logoColor=black)
+![BERT](https://img.shields.io/badge/BERT-4B32C3?style=flat-square&logo=google&logoColor=white)
+![GPT](https://img.shields.io/badge/GPT-412991?style=flat-square&logo=openai&logoColor=white)
+![CLIP](https://img.shields.io/badge/CLIP-000000?style=flat-square&logo=openai&logoColor=white)
+![HCX-007](https://img.shields.io/badge/HCX--007-03C75A?style=flat-square&logo=naver&logoColor=white)
 
 ### Retrieval / LLM Application
 
-BGE-M3 · BGE Reranker · BM25 · Dense Retrieval · Hybrid Retrieval · RAG · Reranking
+![RAG](https://img.shields.io/badge/RAG-6C63FF?style=flat-square&logo=semanticweb&logoColor=white)
+![BGE-M3](https://img.shields.io/badge/BGE--M3-0052CC?style=flat-square&logo=buffer&logoColor=white)
+![BM25](https://img.shields.io/badge/BM25-005571?style=flat-square&logo=elasticsearch&logoColor=white)
+![Dense Retrieval](https://img.shields.io/badge/Dense_Retrieval-7B61FF?style=flat-square&logo=databricks&logoColor=white)
+![Hybrid Retrieval](https://img.shields.io/badge/Hybrid_Retrieval-008080?style=flat-square&logo=searchengineland&logoColor=white)
+![Reranking](https://img.shields.io/badge/Reranking-FF6F00?style=flat-square&logo=weightsandbiases&logoColor=white)
 
 ### Backend / Data
 
-Python · FastAPI · PostgreSQL · SQLite · KOSIS Open API · JSON Schema · CSV Pipeline
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
+![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white)
+![ChromaDB](https://img.shields.io/badge/ChromaDB-FF6446?style=flat-square&logo=googlechrome&logoColor=white)
+![REST API](https://img.shields.io/badge/REST_API-0096D6?style=flat-square&logo=fastapi&logoColor=white)
+![JSON](https://img.shields.io/badge/JSON-000000?style=flat-square&logo=json&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)
 
 ### Evaluation
 
-Top-k Recall · Coordinate Accuracy · READY / ENRICH / REJECT Gate · MATCH / UNRESOLVED Policy · Regression Tests
+![Top-k Recall](https://img.shields.io/badge/Top--k_Recall-2E8B57?style=flat-square)
+![Coordinate Accuracy](https://img.shields.io/badge/Coordinate_Accuracy-4682B4?style=flat-square)
+![Blind Evaluation](https://img.shields.io/badge/Blind_Evaluation-8A2BE2?style=flat-square)
+![Regression Tests](https://img.shields.io/badge/Regression_Tests-228B22?style=flat-square)
 
 ---
 
