@@ -1,156 +1,161 @@
-# 구정현 | AI · NLP Developer
+# Hi there, I'm rnwjdgus03 👋
 
-자연어를 구조화하고, 검색 결과를 공식 데이터와 연결해 **근거를 추적할 수 있는 AI 시스템**을 만드는 데 관심이 있습니다.
+AI와 NLP를 공부하며, LLM이 생성한 답변보다 **근거를 추적할 수 있는 AI 시스템**에 관심이 있습니다.
 
-모델의 답변만 보여주는 것보다 어떤 문서와 데이터에서 답을 찾았는지, 불확실한 경우 왜 판단을 보류했는지 설명할 수 있는 시스템을 지향합니다.
-
----
-
-## Profile
-
-- **관심 분야**: NLP, Retrieval, RAG, LLM Application, Evidence-grounded AI
-- **개발 방향**: 비정형 텍스트 구조화 → 후보 검색 → 정형 데이터 검증 → 근거 기반 응답
-- **중요하게 보는 것**: 재현 가능한 평가, 데이터 정합성, 안전한 실패, 추적 가능한 근거
+저는 뉴스 문장, 검색 후보, 공식 데이터, 평가 지표가 서로 어떻게 연결되는지 확인할 수 있는 **evidence-grounded AI pipeline**을 만드는 것을 중요하게 생각합니다.
 
 ---
 
-## Core Competencies
+## Now
 
-### AI / Deep Learning Fundamentals
-
-- 인공지능과 딥러닝의 발전 과정, 지도학습과 범용 모델의 차이를 학습했습니다.
-- PyTorch의 Tensor 연산, Dataset / DataLoader, 모델 구성, 자동 미분과 GPU 연산 흐름을 이해하고 실습했습니다.
-- Forward Pass → Loss 계산 → Backward Pass → Weight Update로 이어지는 학습 과정과 Gradient Descent를 정리했습니다.
-- RNN의 순차 처리 방식과 기울기 소실, 장기 의존성, 병렬화 한계를 학습했습니다.
-
-### NLP & Language Models
-
-- 문장·어절·형태소·subword 단위 토큰화와 정규화, padding 등 텍스트 전처리 과정을 학습했습니다.
-- Hugging Face 데이터셋을 활용해 Text Classification을 비롯한 NLP Task의 데이터 구조를 실습했습니다.
-- Seq2Seq와 Attention이 RNN의 정보 병목을 보완하는 과정을 학습했습니다.
-- Transformer의 구조, Dot-Product Attention과 Multi-Head Attention을 학습했습니다.
-- BERT의 양방향 문맥 표현과 Masked Language Modeling을 학습했습니다.
-- GPT 계열의 Decoder-only 구조와 자기회귀 생성 방식을 학습했습니다.
-
-### Retrieval & Grounded AI
-
-- LLM의 Knowledge Cutoff, 도메인 지식 부족, 계산·추론 한계와 hallucination 문제를 학습했습니다.
-- Parametric Knowledge에 외부 문서 검색을 결합하는 RAG의 배경과 동작 원리를 이해하고 프로젝트에 적용했습니다.
-- Lexical Search, Dense Retrieval, Hybrid Retrieval, Reranking의 역할과 실패 지점을 평가했습니다.
-- 검색 근거가 없을 때 답을 생성하지 않는 보수적인 응답·판정 정책에 관심이 있습니다.
-
-### Multimodal
-
-- CLIP의 Text Encoder / Image Encoder 구조와 contrastive learning을 학습했습니다.
-- 이미지와 텍스트를 같은 임베딩 공간에 정렬하는 방식과 zero-shot classification의 원리를 이해했습니다.
+- AI / NLP 학습 내용을 [TIL](https://github.com/rnwjdgus03/TIL)에 정리하고 있습니다.
+- 공식 통계 기반 뉴스 수치 검증 PoC를 팀 프로젝트로 개발했습니다.
+- HCX-007, BGE-M3, reranker, PostgreSQL, KOSIS Open API를 활용한 검증 파이프라인을 실험했습니다.
+- 검색 모델이 만든 후보를 그대로 믿지 않고, 정형 메타데이터와 공식 API로 검증하는 구조에 관심이 있습니다.
 
 ---
 
-## Projects
+## Featured Project
 
-프로젝트마다 **문제 → 담당 역할 → 핵심 구현 → 성과 → 트러블슈팅** 순서로 기록합니다.
+### KOSIS 뉴스 수치 검증 PoC
 
-| No. | Project | Area | Status | Links |
-|---:|---|---|---|---|
-| 01 | KOSIS 뉴스 수치 검증 PoC | NLP · Retrieval · Backend · Evaluation | Completed | [Repository](https://github.com/rnwjdgus03/NLP_05-Team-Project-3) · [Presentation](./assets/kosis-news-verification-final.pptx) |
+Official Statistics-grounded News Claim Verification PoC  
+Team Project | NLP · Retrieval · Backend · Evaluation
 
-### 01. KOSIS 뉴스 수치 검증 PoC
+[발표자료 PPTX](./assets/kosis-news-verification-final.pptx) · [Project Repository](https://github.com/rnwjdgus03/NLP_05-Team-Project-3)
 
-> 뉴스 기사 속 수치 주장을 KOSIS 공식 통계 좌표와 연결해 검증 가능한 범위만 안전하게 자동화한 PoC
+뉴스 기사 URL에서 수치 주장을 추출하고, 해당 주장이 KOSIS 공식 통계로 검증 가능한지 판단하는 PoC를 개발했습니다.
 
-#### Problem
+이 프로젝트의 핵심은 뉴스 속 숫자를 바로 맞히는 것이 아니라, 그 숫자가 어떤 공식 통계표, 항목, 분류, 기간, 단위에 해당하는지 **정확한 통계 좌표**를 찾는 것이었습니다.
 
-뉴스에 등장하는 숫자를 검증하려면 단순히 비슷한 통계표를 찾는 것만으로는 부족했습니다. 공식값을 조회하려면 `tbl_id`, `ITEM`, `OBJ`, 기간, 주기, 단위가 모두 맞는 **정확한 통계 좌표**가 필요했습니다.
+- HCX-007 Structured Outputs를 사용해 뉴스 문장에서 수치, 단위, 기간, 비교 기준, 대상을 measurement 단위로 구조화했습니다.
+- Lexical search, BGE-M3, reranker를 활용해 뉴스 표현과 KOSIS 통계표명 사이의 표현 차이를 보완했습니다.
+- PostgreSQL에 KOSIS 메타데이터를 정규화해 저장하고, 실제 존재하는 ITEM / OBJ / period 조합만 통과시키는 exact retrieval 구조를 설계했습니다.
+- PostgreSQL preflight를 통과한 좌표에 대해서만 KOSIS Open API를 호출해 공식값을 조회했습니다.
+- 불확실한 경우 억지로 MATCH / MISMATCH를 내지 않고 UNRESOLVED로 보류하는 보수적 정책을 적용했습니다.
+- 표 ID가 연도별로 바뀌는 문제를 처리하기 위해 `table_family`, `valid_from`, `valid_to` 개념으로 같은 통계 계열을 연결했습니다.
 
-#### My Work
+#### Key Result
 
-- HCX-007 Structured Outputs로 기사 문장에서 수치, 단위, 기간, 비교 기준과 대상을 measurement 단위로 구조화했습니다.
-- Lexical Search + BGE-M3 + Reranker로 관련 통계표 후보를 검색했습니다.
-- PostgreSQL에 KOSIS 메타데이터를 정규화해 실제 존재하는 ITEM / OBJ / period 조합만 조회하도록 구성했습니다.
-- PostgreSQL preflight를 통과한 좌표만 KOSIS Open API에 요청했습니다.
-- 근거가 부족한 경우 강제로 판정하지 않고 `UNRESOLVED`로 보류하는 정책을 적용했습니다.
-- 연도별로 달라지는 표 ID와 표명을 `table_family`, `valid_from`, `valid_to`로 연결했습니다.
+- 개발 좌표 gold 300건 기준 ITEM Top-5: 77.3%
+- 개발 좌표 gold 300건 기준 전체 좌표 Top-5: 74.3%
+- 실제 기사 개발 E2E: READY 60건 중 MATCH 6건, UNRESOLVED 54건
+- URL50 실험: HCX 구조화 측정값 263건 중 KOSIS-ready 96건, 공식 근거 자동 확정 11건
+- 처리시간 최적화: 전체 파이프라인 193.25초에서 120.70초로 단축
 
-#### Architecture
+> Top-k는 fact-check accuracy가 아니라, 정답 좌표가 상위 k개 후보 안에 포함된 비율입니다.
+
+---
+
+## System Architecture
 
 ```text
 Article URL
-→ HCX-007 Claim / Measurement Extraction
+→ Claim / Measurement Extraction with HCX-007
 → READY / ENRICH / REJECT Gate
 → Stage A: Lexical + BGE-M3 + Reranker Table Retrieval
 → Stage B: PostgreSQL Exact Coordinate Retrieval
 → Stage C: Coordinate Reranking
-→ KOSIS Open API Preflight & Value Lookup
+→ KOSIS Open API Official Value Lookup with Preflight
 → MATCH / MISMATCH_REVIEW_REQUIRED / UNRESOLVED
 ```
 
-핵심 설계는 **BGE 의미 검색과 PostgreSQL 정확 좌표 조회를 분리한 것**입니다. 검색 모델은 후보를 넓게 찾고, 관계형 데이터베이스는 실제 존재하는 좌표만 승인합니다.
+---
 
-#### Results
+## Troubleshooting
 
-| Evaluation | Result |
-|---|---:|
-| 개발 좌표 gold 300건 ITEM Top-5 | 77.3% |
-| 개발 좌표 gold 300건 전체 좌표 Top-5 | 74.3% |
-| 실제 기사 개발 E2E | READY 60건 중 MATCH 6건, UNRESOLVED 54건 |
-| URL50 | 측정값 263건 → KOSIS-ready 96건 → 공식 근거 자동 확정 11건 |
-| 전체 처리시간 | 193.25초 → 120.70초 |
+### 1. LLM에게 좌표 선택을 맡기면 위험했다
 
-> Top-k는 팩트체크 정확도가 아니라, 정답 좌표가 상위 k개 후보 안에 포함된 비율입니다.
+초기에는 LLM이 뉴스 문장을 보고 KOSIS 표와 좌표를 직접 선택하도록 실험했습니다.
 
-<details>
-<summary><strong>Troubleshooting 1 — Lexical과 BGE-M3의 역할을 다시 정의</strong></summary>
+하지만 LLM은 실제 후보 목록에 없는 `org_id`, `tbl_id`, `ITEM`, `OBJ` 코드를 그럴듯하게 생성할 수 있었습니다.
 
-초기 24건 표 검색에서는 Lexical Recall@5가 62.5%, BGE-M3 Hybrid Recall@5가 58.3%였습니다. 작은 초기 평가만 보면 Lexical이 더 높았지만, 자동 gold 200건에서는 BGE Rerank 결합 방식이 Recall@20을 84.5%에서 91.0%로 높였습니다.
+그래서 LLM의 역할을 최종 좌표 승인자가 아니라 **구조화 추출기**로 제한했습니다.
 
-| Evaluation | Method | Recall@1 | Recall@5 | Recall@10 | Recall@20 |
+- HCX-007: 뉴스 문장을 measurement로 구조화
+- BGE-M3: 관련 통계표 후보 검색
+- PostgreSQL: 실제 존재하는 좌표 승인
+- KOSIS API: 공식값 조회
+
+---
+
+### 2. 초기에는 Lexical이 BGE-M3보다 높았다
+
+초기 24건 gold 기준 표 검색 실험에서는 lexical이 BGE-M3 hybrid보다 높은 결과를 보였습니다.
+
+| 평가셋 | 방식 | Recall@1 | Recall@2 | Recall@3 | Recall@5 |
+|---|---|---:|---:|---:|---:|
+| READY 39건 중 표 gold 24건 | Lexical | 54.2% | 62.5% | 62.5% | 62.5% |
+| READY 39건 중 표 gold 24건 | BGE-M3 hybrid | 50.0% | 58.3% | 58.3% | 58.3% |
+
+이 결과를 통해 BGE-M3를 무조건적인 대체재로 보지 않았습니다.
+
+대신 lexical은 정확한 용어 매칭에 강한 후보 생성기로 유지하고, BGE-M3와 reranker는 표현 차이를 보완하는 역할로 사용했습니다.
+
+이후 자동 gold 200건 개발셋에서는 BGE rerank를 결합하면서 후보 회수율이 개선되었습니다.
+
+| 평가셋 | 방식 | Recall@1 | Recall@5 | Recall@10 | Recall@20 |
 |---|---|---:|---:|---:|---:|
 | 자동 gold 200건 | Lexical-only | 36.5% | 61.0% | - | 84.5% |
-| 자동 gold 200건 | Lexical + BGE-M3 + Reranker | 36.5% | 67.5% | 80.5% | 91.0% |
+| 자동 gold 200건 | Lexical + BGE-M3 + reranker | 36.5% | 67.5% | 80.5% | 91.0% |
 
-Lexical은 정확한 용어를 회수하는 후보 생성기로 유지하고, BGE-M3와 Reranker는 표현 차이를 보완하고 넓은 후보군을 재정렬하는 데 사용했습니다.
+BGE-M3의 효과는 1위 정답률을 바꾸는 것보다, 정답 통계표를 더 넓은 후보군 안에 회수하는 데서 나타났습니다.
 
-</details>
+---
 
-<details>
-<summary><strong>Troubleshooting 2 — ChromaDB + SQLite에서 PostgreSQL로 전환</strong></summary>
+### 3. ChromaDB + SQLite에서 PostgreSQL로 전환했다
 
-ChromaDB에 좌표를 문서처럼 저장하면 의미가 비슷하지만 실제로 존재하지 않는 ITEM / OBJ 조합도 후보가 될 수 있었습니다. 공식 통계 검증에는 유사한 좌표가 아니라 정확히 존재하는 좌표가 필요했습니다.
+처음에는 KOSIS 좌표를 문서화해 ChromaDB에 저장하고, SQLite / CSV로 메타데이터를 관리하는 방식을 실험했습니다.
 
-PostgreSQL에 다음 구조로 메타데이터를 정규화했습니다.
+하지만 공식 통계 검증에서는 “비슷한 좌표”가 아니라 “실제로 존재하는 정확한 좌표”가 필요했습니다.
 
-| Table | Responsibility |
+예를 들어 같은 통계표 안에서도 다음 중 하나만 달라져도 공식값 비교가 성립하지 않습니다.
+
+- ITEM: 월평균임금 vs 증감률
+- OBJ: 정규직 vs 비정규직
+- period: 월간 vs 연간
+- unit: 명, 천명, %, %p
+
+그래서 최종적으로 PostgreSQL에 KOSIS 메타데이터를 정규화해 저장했습니다.
+
+| 개념 테이블 | 역할 |
 |---|---|
-| `kosis_tables` | 기관 코드, 통계표 ID, 표명, 조사명, 주기 |
+| `kosis_tables` | 기관 코드, 통계표 ID, 통계표명, 조사명, 주기 |
 | `kosis_items` | ITEM 코드, 항목명, 단위, 값 유형 |
-| `axes` / `axis_values` | OBJ 축, 분류 코드, 분류명, 상위 분류 |
+| `axes` / `axis_values` | OBJ 축 레벨, 분류 코드, 분류명, 상위 분류 |
 | `periodicities` | 조회 가능한 주기와 기간 조건 |
-| `coordinate_candidates` | ITEM / OBJ / period 후보 조합 |
+| `coordinate_candidates` | ITEM / OBJ / period 조합의 후보 좌표 |
 
-이 전환으로 좌표 존재 여부를 API 호출 전에 확인하고, 잘못된 요청과 불필요한 호출을 줄일 수 있었습니다.
+> ChromaDB는 비슷한 좌표를 찾았고, PostgreSQL은 존재하는 좌표만 남겼습니다.
 
-</details>
+---
 
-<details>
-<summary><strong>Troubleshooting 3 — Reranker 이전 후보 회수 문제</strong></summary>
+### 4. Reranker는 후보를 새로 찾지 못한다
 
-Reranker는 이미 들어온 후보의 순서만 바꿀 수 있고, 누락된 정답표를 새로 만들 수 없습니다. 초기에는 정답표가 후보 풀에 들어오지 않아 재정렬 효과가 제한됐습니다.
+Reranker는 후보를 새로 발굴하는 모델이 아니라, 이미 들어온 후보의 순서를 다시 정렬하는 모델입니다.
+
+초기 BGE-only run에서는 정답표가 후보 풀에 잘 들어오지 않아 Recall@20이 낮았습니다.
+
+이 상태에서는 reranker가 아무리 좋아도 정답을 위로 올릴 수 없습니다.
+
+그래서 구조를 다음처럼 바꿨습니다.
 
 ```text
-Lexical Top-50 Primary Pool
-→ BGE-M3 Top-20 Signal
-→ BGE Reranker
-→ Final Table Candidates
+Lexical Top-50 primary pool
+→ BGE-M3 Top-20 signal
+→ BGE reranker
+→ Final table candidates
 ```
 
-먼저 후보 recall을 확보한 뒤 의미 기반 점수로 재정렬하도록 변경했습니다.
+즉, lexical로 후보 풀을 넓히고, BGE-M3와 reranker로 재정렬하는 방식으로 전환했습니다.
 
-</details>
+---
 
-<details>
-<summary><strong>Troubleshooting 4 — 표 ID 변경과 시계열 연결</strong></summary>
+### 5. 같은 통계도 연도에 따라 표 ID와 표명이 바뀌었다
 
-동일한 통계 계열도 시기에 따라 표명과 표 ID가 달랐습니다. 하나의 `tbl_id`만 검색하면 과거 또는 최신 기간이 누락되므로 관련 표를 `table_family`로 묶고 유효 기간을 함께 검사했습니다.
+KOSIS에서는 같은 지표라도 연도에 따라 표명과 표 ID가 바뀌는 경우가 있었습니다.
+
+예를 들어 로봇 수입 관련 지표는 시기별로 다른 표명으로 제공되었습니다.
 
 ```text
 2007–2012: 로봇 단품 및 부품 수입현황
@@ -158,43 +163,81 @@ Lexical Top-50 Primary Pool
 2019–2024: 로봇산업 수입현황
 ```
 
-</details>
+하나의 표만 찾으면 시계열 전체를 덮을 수 없어서, 같은 계열의 표를 `table_family`로 묶고 각 표의 유효 기간을 함께 확인했습니다.
 
-<details>
-<summary><strong>Troubleshooting 5 — UNRESOLVED와 일반화 성능</strong></summary>
-
-실제 기사 개발 E2E에서 READY 60건 중 54건이 UNRESOLVED였습니다. 이는 모든 기사를 강제로 판정하기보다 좌표·기간·단위·공식값 중 하나라도 불확실하면 오판을 막는 안전장치입니다.
-
-개발셋 재대입에서는 ITEM Top-5 90.3%, 좌표 Top-5 90.2%였지만 blind100에서는 각각 58.0%, 54.0%였습니다. 반복된 표와 키워드에 대한 과적합을 확인했고, 이후 평가셋은 기사뿐 아니라 `tbl_id`와 `table_family` 기준으로 분리해야 한다는 결론을 얻었습니다.
-
-</details>
+이 경험을 통해 표 검색은 단일 `tbl_id` 검색보다 “통계 계열 검색”에 가까워야 한다는 점을 배웠습니다.
 
 ---
 
-## Technical Toolbox
+### 6. 값이 다르다고 바로 불일치로 처리할 수 없었다
+
+공식값과 기사 수치가 다를 때도 바로 오보로 판단하지 않았습니다.
+
+반올림 표현, 0에 가까운 값, 단위 불명확, 잠정치와 개정치 문제 때문에 경계 구간을 나누었습니다.
+
+| 상대오차 | 판정 |
+|---:|---|
+| 1.5% 이하 | MATCH |
+| 1.5% 초과 4% 이하 | REVIEW_REQUIRED |
+| 4% 초과 | MISMATCH_REVIEW_REQUIRED |
+
+단위 환산 근거가 부족하거나 공식 좌표가 불확실하면 값을 비교하지 않고 UNRESOLVED로 처리했습니다.
+
+---
+
+### 7. UNRESOLVED는 실패가 아니라 안전장치다
+
+실제 기사 개발 E2E에서는 READY 60건 중 MATCH 6건, UNRESOLVED 54건이 나왔습니다.
+
+이 PoC의 목표는 모든 뉴스를 강제로 판정하는 것이 아니라, 공식 통계로 검증 가능한 범위만 안전하게 자동화하는 것이었습니다.
+
+좌표, 기간, 단위, 공식값 중 하나라도 불확실하면 자동 오판보다 보류가 안전하다고 판단했습니다.
+
+URL50 실험에서도 HCX가 263개의 측정값을 구조화했지만, KOSIS-ready gate를 통과한 것은 96건이었고 공식 근거까지 자동 확정한 것은 11건이었습니다.
+
+이 감소는 단순 손실이 아니라, KOSIS 범위 밖 주장과 좌표 불확실성을 걸러내는 과정이었습니다.
+
+---
+
+### 8. 개발셋 성능을 일반화 성능으로 착각할 수 있었다
+
+개발셋 재대입에서는 ITEM Top-5 90.3%, 좌표 Top-5 90.2%까지 올라갔지만, 신규 blind100에서는 ITEM Top-5 58.0%, 좌표 Top-5 54.0%로 낮아졌습니다.
+
+원인은 개발셋에 반복 등장한 통계표와 키워드를 지나치게 잘 기억한 것이었습니다.
+
+이후에는 기사 단위 분리만으로 충분하지 않다고 보고, `tbl_id`와 `table_family` 기준으로 개발·검증·테스트를 분리해야 한다는 결론을 냈습니다.
+
+---
+
+## What I Learned
+
+- 뉴스 수치 검증의 핵심은 숫자 추출보다 공식 통계 좌표 정합성에 있다.
+- LLM은 최종 판정자보다 구조화 추출기로 사용할 때 더 안전했다.
+- Dense retrieval은 후보 확장에 유용하지만, 공식 좌표 존재성 검증은 관계형 DB가 더 적합했다.
+- Reranker 성능보다 reranker에 들어가기 전 후보 풀의 recall이 먼저 중요했다.
+- 자동화 서비스에서는 “모르는 것을 모른다고 말하는 정책”이 정확도만큼 중요하다.
+- 개발셋 재평가 결과와 신규 blind 결과를 분리해서 보고해야 모델의 실제 일반화를 판단할 수 있다.
+- 공식 통계 검증에서는 표 하나가 아니라 같은 계열의 표와 유효 기간까지 함께 봐야 한다.
+
+---
+
+## Tech Stack
 
 ### AI / NLP
 
-Python · PyTorch · Hugging Face · HCX-007 · BGE-M3 · BGE Reranker · BM25 · Transformer · BERT · GPT · CLIP
-
-### Retrieval / LLM Application
-
-RAG · Lexical Search · Dense Retrieval · Hybrid Retrieval · Reranking · Structured Outputs · Prompt Design
+HCX-007 · Structured Outputs · BGE-M3 · BGE Reranker · BM25 · Dense Retrieval · RAG · Reranking
 
 ### Backend / Data
 
-FastAPI · PostgreSQL · SQLite · ChromaDB · REST API · KOSIS Open API · JSON Schema · CSV Pipeline
+Python · FastAPI · PostgreSQL · SQLite · KOSIS Open API · JSON Schema · CSV Pipeline
 
 ### Evaluation
 
-Top-k Recall · Coordinate Accuracy · Gold Dataset · Blind Evaluation · Regression Test · Error Analysis
+Top-k Recall · Coordinate Accuracy · READY / ENRICH / REJECT Gate · MATCH / UNRESOLVED Policy · Regression Tests
 
 ---
 
-## What I Value
+## Repositories
 
-- 검색 모델의 점수와 실제 데이터의 존재 여부를 분리해 검증합니다.
-- 개발셋 성능과 blind 성능을 구분해 일반화 가능성을 확인합니다.
-- 성공 사례뿐 아니라 누락, 오탐, 과적합과 같은 실패 원인을 기록합니다.
-- 근거가 없을 때는 그럴듯한 답보다 `UNRESOLVED`가 더 안전하다고 생각합니다.
-- 새로운 프로젝트도 동일한 기준으로 문제, 역할, 구현, 결과와 시행착오를 기록할 예정입니다.
+- [TIL](https://github.com/rnwjdgus03/TIL) — AI 공부 기록
+- [NLP_05-Team-Project-3](https://github.com/rnwjdgus03/NLP_05-Team-Project-3) — KOSIS 뉴스 수치 검증 PoC
