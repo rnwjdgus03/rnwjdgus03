@@ -6,7 +6,7 @@ FIRE CARE는 건물 내 소방설비와 기계설비를 모바일로 등록하�
 
 AI는 점검자를 대체하지 않고, 사진으로 확인 가능한 항목만 보조적으로 판정합니다. 최종 점검 결과는 작업자가 직접 확인하고 저장하는 구조로 설계했습니다.
 
-[Presentation PDF](../assets/fire-care-presentation.pdf)
+[Repository](https://github.com/rnwjdgus03/fire-care) · [Presentation PDF](../assets/fire-care-presentation.pdf)
 
 ![FIRE CARE App Flow](../assets/fire-care-app-flow.png)
 
