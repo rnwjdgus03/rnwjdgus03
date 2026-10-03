@@ -14,7 +14,6 @@ AI·NLP를 공부하고 프로젝트로 구현하며, **근거를 추적할 수 
 
 - [AI·NLP Learning Notes](https://github.com/rnwjdgus03/TIL)에 딥러닝 기초부터 Transformer, RAG, CLIP까지 학습 내용을 정리하고 있습니다.
 - 공식 통계와 뉴스 수치 주장을 연결하는 evidence-grounded AI pipeline을 개발했습니다.
-- React Native/Expo와 Gemini를 활용한 시설설비 점검 보조 모바일 앱을 개발했습니다.
 - 검색 모델의 후보를 정형 메타데이터와 공식 API로 검증하는 구조를 탐구하고 있습니다.
 - Retrieval 성능뿐 아니라 좌표 정합성, blind evaluation, 안전한 실패 정책까지 함께 평가하고 있습니다.
 
@@ -27,7 +26,7 @@ AI·NLP를 공부하고 프로젝트로 구현하며, **근거를 추적할 수 
 | Project | Area | Status | Links |
 |---|---|---|---|
 | KOSIS 뉴스 수치 검증 PoC | NLP · Retrieval · Backend · Evaluation | Completed | [Overview](./projects/kosis-news-verification.md) · [Repository](https://github.com/rnwjdgus03/NLP_05-Team-Project-3) · [PPTX](./assets/kosis-news-verification-final.pptx) |
-| FIRE CARE | Mobile · AI Vision · Backend · PostgreSQL | In Progress | [Overview](./projects/fire-care.md) · [Repository](https://github.com/rnwjdgus03/fire-care) · [PDF](./assets/fire-care-presentation.pdf) |
+| FIRE CARE | Mobile · AI Vision · Backend · PostgreSQL | In Progress | [Repository](https://github.com/rnwjdgus03/fire-care) |
 
 ### 01. KOSIS 뉴스 수치 검증 PoC
 
@@ -50,26 +49,6 @@ AI·NLP를 공부하고 프로젝트로 구현하며, **근거를 추적할 수 
 > Top-k는 팩트체크 정확도가 아니라 정답 좌표가 상위 k개 후보에 포함된 비율입니다.
 
 [프로젝트 상세 내용과 트러블슈팅 보기 →](./projects/kosis-news-verification.md)
-
-### 02. FIRE CARE
-
-> 시설설비 점검자가 모바일에서 체크리스트 기반 점검을 수행하고, Gemini 사진 분석과 자동 보고서 생성을 통해 현장 점검을 보조하는 앱
-
-**Capstone Project · Mobile · AI Vision · Backend · PostgreSQL**
-
-- React Native/Expo로 설비 등록, 점검, 보고서 생성 흐름을 구현했습니다.
-- 서버 DB에 설비별 체크리스트를 저장하고, Gemini는 사진으로 확인 가능한 항목만 판정하도록 제한했습니다.
-- 선택 설비와 사진 속 설비가 불일치하거나 사진 품질이 낮으면 저장을 차단했습니다.
-- PostgreSQL 기반으로 사용자, 건물, 층, 설비, 점검 결과, 사진 경로를 저장해 여러 휴대폰에서 같은 데이터를 볼 수 있도록 설계했습니다.
-
-| Key Focus | Implementation |
-|---|---|
-| 설비-사진 불일치 방지 | Gemini 설비 일치 확인 후 불일치 시 저장 차단 |
-| 저품질 사진 대응 | 어두움·흐림·원거리·잘림 사진 재촬영 안내 |
-| 다중 작업자 동기화 | PostgreSQL 서버 DB 기반 점검 데이터 공유 |
-| 보고서 자동화 | 건물 전체 점검 결과와 인증사진을 묶어 이메일 보고서 생성 |
-
-[프로젝트 상세 내용과 트러블슈팅 보기 →](./projects/fire-care.md)
 
 <!-- 새 프로젝트는 아래 형식으로 추가합니다.
 
@@ -130,8 +109,6 @@ AI·NLP를 공부하고 프로젝트로 구현하며, **근거를 추적할 수 
 ### Backend / Data
 
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
-![Express](https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
 ![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white)
 ![ChromaDB](https://img.shields.io/badge/ChromaDB-FF6446?style=flat-square&logo=googlechrome&logoColor=white)
@@ -139,14 +116,6 @@ AI·NLP를 공부하고 프로젝트로 구현하며, **근거를 추적할 수 
 ![JSON](https://img.shields.io/badge/JSON-000000?style=flat-square&logo=json&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)
-
-### Mobile / App
-
-![React Native](https://img.shields.io/badge/React_Native-61DAFB?style=flat-square&logo=react&logoColor=black)
-![Expo](https://img.shields.io/badge/Expo-000020?style=flat-square&logo=expo&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
-![Gemini](https://img.shields.io/badge/Gemini-8E75B2?style=flat-square&logo=googlegemini&logoColor=white)
-![Gmail SMTP](https://img.shields.io/badge/Gmail_SMTP-EA4335?style=flat-square&logo=gmail&logoColor=white)
 
 ### Evaluation
 
@@ -161,4 +130,4 @@ AI·NLP를 공부하고 프로젝트로 구현하며, **근거를 추적할 수 
 
 - [TIL](https://github.com/rnwjdgus03/TIL) — AI·NLP 개념을 학습 흐름에 따라 정리한 노트
 - [NLP_05-Team-Project-3](https://github.com/rnwjdgus03/NLP_05-Team-Project-3) — KOSIS 뉴스 수치 검증 PoC
-- FIRE CARE — AI 기반 시설설비 점검 및 보고서 자동화 모바일 앱
+- [FIRE CARE](https://github.com/rnwjdgus03/fire-care) — AI 기반 시설설비 점검 및 보고서 자동화 모바일 앱
